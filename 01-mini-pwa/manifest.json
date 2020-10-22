@@ -1,0 +1,14 @@
+{
+  "start_url": "/",
+  "name": "Mini PWA",
+  "short_name": "Mini PWA",
+  "description": "Mini PWA",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/world-wide-web-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}

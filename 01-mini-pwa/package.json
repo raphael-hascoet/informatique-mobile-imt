@@ -1,0 +1,15 @@
+{
+  "name": "01-mini-pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "PORT=4200 serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "https-localhost": "^4.6.3"
+  }
+}
