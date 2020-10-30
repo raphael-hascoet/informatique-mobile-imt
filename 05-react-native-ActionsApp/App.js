@@ -104,7 +104,10 @@ export default class App extends React.Component {
           />
           <BoutonCreer onValider={() => this.validerNouvelleAction()} />
         </ScrollView>
-        <Menu setActionsDisplayState={this.setActionsDisplayState} />
+        <Menu
+          setActionsDisplayState={this.setActionsDisplayState}
+          selectedDiplayState={currentDisplayState}
+        />
       </View>
     );
   }

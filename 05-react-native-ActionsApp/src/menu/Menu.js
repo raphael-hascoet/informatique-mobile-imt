@@ -5,16 +5,22 @@ import OptionMenu from "./OptionMenu";
 /**
  * Composant Menu.
  */
-const Menu = ({ setActionsDisplayState }) => (
+const Menu = ({ setActionsDisplayState, selectedDiplayState }) => (
   <View style={styles.menu}>
-    <OptionMenu title="Toutes" onSelect={setActionsDisplayState("all")} />
+    <OptionMenu
+      title="Toutes"
+      onSelect={setActionsDisplayState("all")}
+      selected={selectedDiplayState === "all"}
+    />
     <OptionMenu
       title="Actives"
       onSelect={setActionsDisplayState("in-progress")}
+      selected={selectedDiplayState === "in-progress"}
     />
     <OptionMenu
       title="Terminées"
       onSelect={setActionsDisplayState("finished")}
+      selected={selectedDiplayState === "finished"}
     />
   </View>
 );
